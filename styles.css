@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Assistant', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: #2c2c2c;
     background: #ffffff;
@@ -163,7 +163,7 @@ main {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Assistant', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.7;
 }
 
@@ -206,14 +206,14 @@ main {
     color: #666;
     font-weight: 400;
     line-height: 1.7;
-    font-family: 'Assistant', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .content-section ul {
     margin-left: 2rem;
     color: #666;
     font-weight: 400;
-    font-family: 'Assistant', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .content-section li {
@@ -297,7 +297,7 @@ footer {
     font-size: 0.95rem;
     margin-bottom: 1rem;
     font-weight: 400;
-    font-family: 'Assistant', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .job-info ul {
@@ -307,7 +307,7 @@ footer {
 .job-info li {
     margin-bottom: 0.8rem;
     line-height: 1.6;
-    font-family: 'Assistant', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 400;
 }
 
@@ -334,14 +334,14 @@ footer {
     font-size: 1rem;
     margin-bottom: 0.3rem;
     font-weight: 400;
-    font-family: 'Assistant', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .education-period {
     color: #8a8a8a;
     font-size: 0.9rem;
     font-weight: 400;
-    font-family: 'Assistant', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .job-header, .education-header {
