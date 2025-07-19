@@ -1,0 +1,36 @@
+/* Common Head Elements - Optimized for Font Loading Speed */
+
+/* Font Loading Optimizations */
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+/* Font Display Optimization */
+@font-face {
+    font-family: 'Tenor Sans';
+    font-display: swap;
+}
+
+/* Common Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #2c2c2c;
+    background: #ffffff;
+    min-height: 100vh;
+}
+
+/* Font Loading Performance */
+.hero h1,
+.content-section h2,
+.job-info h3,
+.education-item h3,
+.job-header h3,
+.education-header h3 {
+    font-family: 'Tenor Sans', sans-serif;
+    font-display: swap;
+} 
