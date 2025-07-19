@@ -1,13 +1,10 @@
 /* Common Head Elements - Optimized for Font Loading Speed */
 
 /* Font Loading Optimizations */
-@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans:wght@400&family=Assistant:wght@400;600&display=swap');
 
 /* Font Display Optimization */
-@font-face {
-    font-family: 'Tenor Sans';
-    font-display: swap;
-}
+/* Google Fonts handles font-face declarations automatically */
 
 /* Common Base Styles */
 * {
@@ -17,11 +14,12 @@
 }
 
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Assistant', 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: #2c2c2c;
     background: #ffffff;
     min-height: 100vh;
+    font-weight: 400;
 }
 
 /* Font Loading Performance */
@@ -32,5 +30,6 @@ body {
 .job-header h3,
 .education-header h3 {
     font-family: 'Tenor Sans', sans-serif;
+    font-weight: 400;
     font-display: swap;
 } 
