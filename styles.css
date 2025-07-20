@@ -414,10 +414,10 @@ footer {
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.job-header, .education-header {
+.job-content, .education-content {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    align-items: flex-start;
+    gap: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -425,6 +425,7 @@ footer {
     width: 40px;
     height: 40px;
     flex-shrink: 0;
+    margin-top:0.9em;
 }
 
 .education-logo-placeholder {
@@ -440,12 +441,32 @@ footer {
     flex-shrink: 0;
 }
 
-.job-header h3, .education-header h3 {
-    margin-bottom: 0.3rem;
+.job-text h3, .education-text h3 {
+    margin-bottom: 0.5rem;
 }
 
-.job-header .job-location, .education-header .education-details {
+.job-location {
+    margin-bottom: 0.2rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.job-period {
+    margin-bottom: 0.8rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.education-details {
     margin-bottom: 0.3rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.education-period {
+    margin-bottom: 0.8rem;
+    color: #666;
+    font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
