@@ -17,6 +17,114 @@ class Gallery {
         // Add gallery photos
         this.galleryItems = [
             {
+                id: 'training_biceps',
+                src: 'gallery/training_biceps.jpeg',
+                name: 'Biceps Training',
+                description: 'Focused strength training session'
+            },
+            {
+                id: 'american_football_warmup',
+                src: 'gallery/american_football_warmup.jpeg',
+                name: 'Football Warmup',
+                description: 'Getting ready for the game'
+            },
+            {
+                id: 'powerlifting_first_place',
+                src: 'gallery/powerlifting_first_place.jpeg',
+                name: 'Powerlifting Champion',
+                description: 'First place victory in powerlifting'
+            },
+            {
+                id: 'europe_town_holiday',
+                src: 'gallery/europe_town_holiday.jpeg',
+                name: 'European Holiday',
+                description: 'Exploring beautiful European towns'
+            },
+            {
+                id: 'july_fourth_pose',
+                src: 'gallery/july_fourth_pose.jpeg',
+                name: 'July Fourth',
+                description: 'Celebrating Independence Day'
+            },
+            {
+                id: 'uni_campus_sitting_pose_on_concrete_block',
+                src: 'gallery/uni_campus_sitting_pose_on_concrete_block.jpeg',
+                name: 'Campus Life',
+                description: 'University campus moments'
+            },
+            {
+                id: 'lifting_with_friends',
+                src: 'gallery/lifting_with_friends.jpeg',
+                name: 'Lifting with Friends',
+                description: 'Training session with the crew'
+            },
+            {
+                id: 'controlling_drone_by_seaside_cliff',
+                src: 'gallery/controlling_drone_by_seaside_cliff.jpeg',
+                name: 'Drone Photography',
+                description: 'Capturing aerial views by the sea'
+            },
+            {
+                id: 'country_kid_with_guitar',
+                src: 'gallery/country_kid_with_guitar.jpeg',
+                name: 'Country Kid',
+                description: 'Musical moments in the countryside'
+            },
+            {
+                id: 'i_am_a_photographer',
+                src: 'gallery/i_am_a_photographer.jpeg',
+                name: 'The Photographer',
+                description: 'Behind the lens capturing moments'
+            },
+            {
+                id: 'strolling_with_shiny_car',
+                src: 'gallery/strolling_with_shiny_car.jpeg',
+                name: 'Shiny Car',
+                description: 'Strolling with the polished ride'
+            },
+            {
+                id: 'basketball_dunk',
+                src: 'gallery/basketball_dunk.jpeg',
+                name: 'Basketball Dunk',
+                description: 'Slam dunk action on the court'
+            },
+            {
+                id: 'new_house_new_keys',
+                src: 'gallery/new_house_new_keys.jpeg',
+                name: 'New House',
+                description: 'New beginnings with new keys'
+            },
+            {
+                id: 'cool_kid_going_to_school',
+                src: 'gallery/cool_kid_going_to_school.jpeg',
+                name: 'Cool Kid',
+                description: 'Stylish student heading to class'
+            },
+            {
+                id: 'american_football_dolphins',
+                src: 'gallery/american_football_dolphins.jpeg',
+                name: 'Dolphins Football',
+                description: 'Supporting the Miami Dolphins'
+            },
+            {
+                id: 'american_footballer_on_way_to_field',
+                src: 'gallery/american_footballer_on_way_to_field.jpeg',
+                name: 'Heading to the Field',
+                description: 'Game day preparation'
+            },
+            {
+                id: 'sprinter_track_athlete',
+                src: 'gallery/sprinter_track_athlete.jpeg',
+                name: 'Track Sprinter',
+                description: 'Speed and power on the track'
+            },
+            {
+                id: 'runner_new_york',
+                src: 'gallery/runner_new_york.jpeg',
+                name: 'New York Runner',
+                description: 'Running through the city streets'
+            },
+            {
                 id: 'zavetti_canada',
                 src: 'gallery/zavetti_canada.jpeg',
                 name: 'Zavetti Canada',
