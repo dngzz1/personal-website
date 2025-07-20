@@ -238,7 +238,7 @@ main {
 
 .content-section {
     background: #ffffff;
-    padding: 3rem 0;
+    padding: 3rem 0 0 0;
     margin-bottom: 2rem;
     border-bottom: 1px solid #e8e8e8;
 }
