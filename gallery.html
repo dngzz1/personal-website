@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel's Personal Website</title>
+    <title>Gallery - Daniel's Personal Website</title>
     <link rel="preload" href="head-common.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="head-common.css"></noscript>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preload" href="images/daniel_faded.jpeg" as="image" type="image/jpeg">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preload" href="images/daniel_thoughtful.jpeg" as="image" type="image/jpeg">
 </head>
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Daniel Ng</div>
+            <div class="logo"><a href="index.html">Daniel Ng</a></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="ideas.html">Ideas</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
                 <li><a href="cv.html">CV</a></li>
             </ul>
             <div class="hamburger">
@@ -29,32 +30,42 @@
     </header>
 
     <main>
-        <section class="hero" id="home">
+        <section class="hero">
             <div class="container">
                 <div class="hero-content">
                     <div class="profile-photo">
-                        <img src="images/daniel_faded.jpeg" alt="Daniel's profile picture" loading="eager" fetchpriority="high">
+                        <img src="images/daniel_thoughtful.jpeg" alt="Daniel's thoughtful profile picture" loading="eager" fetchpriority="high">
                     </div>
-                    <h1>Hi there!</h1>
-                    <p>Welcome to my personal website. I'm excited to share my journey with you.</p>
-                    <a href="about.html" class="cta-button">Learn More</a>
+                    <h1>Gallery</h1>
+                    <p>A collection of moments captured through my lens.</p>
                 </div>
             </div>
         </section>
 
         <div class="container">
-            <section class="content-section">
-                <h2>Welcome to My Portfolio</h2>
-                <p>Hi there! I'm Daniel, a passionate developer originally trained as a mathematician. In my spare time I love learning languages.</p>
-                <p>With a background in software development and a keen eye for design, I enjoy creating elegant solutions that make a difference. I believe in continuous learning and pushing the boundaries of what's possible.</p>
-                <p>When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community.</p>
+            <!-- Gallery Grid -->
+            <section class="gallery-section">
+                <h2>My Photos</h2>
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Gallery items will be dynamically added here -->
+                </div>
             </section>
         </div>
     </main>
 
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&lt;</button>
+            <button class="lightbox-nav lightbox-next" id="lightboxNext">&gt;</button>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
-            <p>&copy; 2024 Daniel. All rights reserved.</p>
+            <p>&copy; 2024 Daniel Ng. All rights reserved.</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/dn390/" target="_blank" aria-label="LinkedIn">
                     <svg width="24" height="24" viewBox="0 0 310 310" fill="currentColor">
@@ -77,14 +88,7 @@
         </div>
     </footer>
 
-    <!-- Image Modal -->
-    <div id="imageModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modalImage" src="" alt="Enlarged profile picture">
-        </div>
-    </div>
-
     <script src="script.js"></script>
+    <script src="gallery.js"></script>
 </body>
 </html> 
