@@ -169,7 +169,6 @@
 .lightbox-nav:disabled {
     opacity: 0.3;
     cursor: not-allowed;
-    pointer-events: none;
 }
 
 .lightbox-prev {
@@ -253,7 +252,6 @@
     .lightbox-nav:disabled {
         opacity: 0.3;
         cursor: not-allowed;
-        pointer-events: none;
     }
     
     .lightbox-prev {

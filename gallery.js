@@ -107,14 +107,16 @@ class Gallery {
             }
         });
 
-        // Navigation
-        lightboxPrev.addEventListener('click', () => {
+        // Navigation - prevent event bubbling
+        lightboxPrev.addEventListener('click', (e) => {
+            e.stopPropagation();
             if (!lightboxPrev.disabled) {
                 this.navigateLightbox(-1);
             }
         });
 
-        lightboxNext.addEventListener('click', () => {
+        lightboxNext.addEventListener('click', (e) => {
+            e.stopPropagation();
             if (!lightboxNext.disabled) {
                 this.navigateLightbox(1);
             }
