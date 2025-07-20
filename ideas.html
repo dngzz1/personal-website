@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel's Personal Website</title>
+    <title>Ideas - Daniel's Personal Website</title>
     <link rel="preload" href="head-common.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="head-common.css"></noscript>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preload" href="images/daniel_yellow.jpg" as="image" type="image/jpeg">
 </head>
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Daniel Ng</div>
+            <div class="logo"><a href="index.html">Daniel Ng</a></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -29,32 +28,38 @@
     </header>
 
     <main>
-        <section class="hero" id="home">
+        <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <div class="profile-photo">
-                        <img src="images/daniel_yellow.jpg" alt="Daniel's profile picture" loading="eager" fetchpriority="high">
-                    </div>
-                    <h1>Hi there!</h1>
-                    <p>Welcome to my personal website. I'm excited to share my journey with you.</p>
-                    <a href="about.html" class="cta-button">Learn More</a>
+                    <h1>Ideas</h1>
+                    <p>My thoughts on design principles and personal aspirations.</p>
                 </div>
             </div>
         </section>
 
         <div class="container">
             <section class="content-section">
-                <h2>Welcome to My Portfolio</h2>
-                <p>Hi there! I'm Daniel, a passionate developer originally trained as a mathematician. In my spare time I love learning languages.</p>
-                <p>With a background in software development and a keen eye for design, I enjoy creating elegant solutions that make a difference. I believe in continuous learning and pushing the boundaries of what's possible.</p>
-                <p>When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community.</p>
+                <h2>My Principles on UI Design</h2>
+                <p>I've seen enough counterexamples of how software can be designed poorly. Here are some principles that I strive to follow when designing a UI:</p>
+                <ul>
+                    <li><b>Clear directions.</b> A first-time user must be able to understand the next steps without time-consuming searching or random button-clicking.</li>
+                    <li><b>Predictable behavior.</b> The application should do exactly what the user instructed it to do, no more no less. Absolutely no auto-completing without their knowledge or approval.</li>
+                    <li><b>Reversible actions.</b> Users should be able to undo their actions. No more next button without a back button. No more accidental deletion without a way to restore the data.</li>
+                    <li><b>Transparent Errors.</b> Users should be able to understand why an error occurred, and how to fix it. No more "Something went wrong" or "Please try again later".</li>
+                    <li><b>Lightweight.</b> Things should not feel heavy. The UI should be as light as possible, and the user should be able to navigate through the UI with ease.</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2>Hopes and Dreams</h2>
+                <p>For now I'll just dump my thoughts here. I'd like to become a better writer, photographer, designer, partner.</p>
             </section>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Daniel. All rights reserved.</p>
+            <p>&copy; 2024 Daniel Ng. All rights reserved.</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/dn390/" target="_blank" aria-label="LinkedIn">
                     <svg width="24" height="24" viewBox="0 0 310 310" fill="currentColor">
@@ -76,14 +81,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Image Modal -->
-    <div id="imageModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modalImage" src="" alt="Enlarged profile picture">
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
