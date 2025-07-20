@@ -72,6 +72,19 @@ nav {
     color: #8a8a8a;
 }
 
+.nav-links a.active {
+    color: #1e293b;
+    /* border-bottom: 2px solid #1e293b; */
+    opacity: 1;
+    pointer-events: none;
+    cursor: default;
+}
+
+.nav-links a:not(.active) {
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
