@@ -1,44 +1,11 @@
-// Navigation and hamburger menu functionality
+// Hamburger menu functionality
 document.addEventListener('DOMContentLoaded', function() {
-    // Check if navigation exists, if not inject it (fallback for direct file access)
-    if (!document.querySelector('.nav-links')) {
-        const header = document.querySelector('header');
-        if (header) {
-            header.innerHTML = `
-                <nav class="container">
-                    <div class="logo"><a href="index.html">Daniel Ng</a></div>
-                    <ul class="nav-links">
-                        <li><a href="index.html" class="nav-home">Home</a></li>
-                        <li><a href="about.html" class="nav-about">About</a></li>
-                        <li><a href="cv.html" class="nav-cv">CV</a></li>
-                        <li><a href="projects.html" class="nav-projects">Projects</a></li>
-                    </ul>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </nav>
-            `;
-        }
-    }
-
-    // Set active navigation state
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('.nav-links a');
-    
-    navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
-        }
-    });
-
     const hamburger = document.querySelector('.hamburger');
-    const navLinksContainer = document.querySelector('.nav-links');
+    const navLinks = document.querySelector('.nav-links');
     
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
-        navLinksContainer.classList.toggle('active');
+        navLinks.classList.toggle('active');
     });
     
     // Close menu when clicking on a link
@@ -46,15 +13,25 @@ document.addEventListener('DOMContentLoaded', function() {
     links.forEach(link => {
         link.addEventListener('click', function() {
             hamburger.classList.remove('active');
-            navLinksContainer.classList.remove('active');
+            navLinks.classList.remove('active');
         });
     });
     
     // Close menu when clicking outside
     document.addEventListener('click', function(event) {
-        if (!hamburger.contains(event.target) && !navLinksContainer.contains(event.target)) {
+        if (!hamburger.contains(event.target) && !navLinks.contains(event.target)) {
             hamburger.classList.remove('active');
-            navLinksContainer.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
+
+    // Set active navigation state
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const allNavLinks = document.querySelectorAll('.nav-links a');
+    
+    allNavLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
         }
     });
 
@@ -76,6 +53,14 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = 'auto'; // Restore scrolling
         }, 300);
     }
+
+    // Handle image loading errors
+    profilePhotos.forEach(photo => {
+        photo.addEventListener('error', function() {
+            this.style.display = 'none';
+            this.parentElement.classList.add('no-image');
+        });
+    });
 
     // Open modal when profile photo is clicked
     profilePhotos.forEach(photo => {
