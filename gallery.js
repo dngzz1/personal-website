@@ -14,49 +14,133 @@ class Gallery {
     }
 
     loadGalleryItems() {
-        // Add existing photos to the gallery
+        // Add gallery photos
         this.galleryItems = [
             {
-                id: 'daniel_faded',
-                src: 'images/daniel_faded.jpeg',
-                name: 'Daniel - Faded Portrait',
-                description: 'A thoughtful portrait with a faded aesthetic'
+                id: 'zavetti_canada',
+                src: 'gallery/zavetti_canada.jpeg',
+                name: 'Zavetti Canada',
+                description: 'Exploring the beautiful landscapes of Canada'
             },
             {
-                id: 'daniel_thoughtful',
-                src: 'images/daniel_thoughtful.jpeg',
-                name: 'Daniel - Thoughtful',
-                description: 'A contemplative moment captured'
+                id: 'swiss_alps',
+                src: 'gallery/swiss_alps.jpeg',
+                name: 'Swiss Alps',
+                description: 'Breathtaking views of the Swiss mountain ranges'
             },
             {
-                id: 'daniel_hood',
-                src: 'images/daniel_hood.jpeg',
-                name: 'Daniel - Hood Portrait',
-                description: 'Portrait with a casual hooded look'
+                id: 'lakeside_town_beach',
+                src: 'gallery/lakeside_town_beach.jpeg',
+                name: 'Lakeside Town Beach',
+                description: 'A peaceful day by the lakeside'
             },
             {
-                id: 'daniel_japanese',
-                src: 'images/daniel_japanese.jpeg',
-                name: 'Daniel - Japanese Style',
-                description: 'A portrait with Japanese cultural elements'
+                id: 'ice_landscape_photographer',
+                src: 'gallery/ice_landscape_photographer.jpeg',
+                name: 'Ice Landscape',
+                description: 'Capturing the beauty of frozen landscapes'
             },
             {
-                id: 'daniel_jeans',
-                src: 'images/daniel_jeans.jpeg',
-                name: 'Daniel - Casual Jeans',
-                description: 'A relaxed portrait in casual attire'
+                id: 'cambridge_streetside_blakely',
+                src: 'gallery/cambridge_streetside_blakely.jpeg',
+                name: 'Cambridge Streetside',
+                description: 'Urban exploration in Cambridge'
             },
             {
-                id: 'daniel_pink',
-                src: 'images/daniel_pink.jpeg',
-                name: 'Daniel - Pink Portrait',
-                description: 'A portrait with warm pink tones'
+                id: 'cycling_pose_lycra',
+                src: 'gallery/cycling_pose_lycra.jpeg',
+                name: 'Cycling Adventure',
+                description: 'Ready for the next cycling challenge'
             },
             {
-                id: 'daniel_yellow',
-                src: 'images/daniel_yellow.jpg',
-                name: 'Daniel - Yellow Portrait',
-                description: 'A vibrant portrait with yellow lighting'
+                id: 'swimming_winner',
+                src: 'gallery/swimming_winner.jpeg',
+                name: 'Swimming Champion',
+                description: 'Victory in the pool'
+            },
+            {
+                id: 'american_football_spectator',
+                src: 'gallery/american_football_spectator.jpeg',
+                name: 'Football Spectator',
+                description: 'Enjoying the game from the stands'
+            },
+            {
+                id: 'soccer_goalkeeper',
+                src: 'gallery/soccer_goalkeeper.jpeg',
+                name: 'Soccer Goalkeeper',
+                description: 'Defending the goal with determination'
+            },
+            {
+                id: 'dorm_preworkout',
+                src: 'gallery/dorm_preworkout.jpeg',
+                name: 'Pre-Workout Prep',
+                description: 'Getting ready for an intense session'
+            },
+            {
+                id: 'night_at_bar_posing_staircase',
+                src: 'gallery/night_at_bar_posing_staircase.jpeg',
+                name: 'Night Out',
+                description: 'A memorable evening in the city'
+            },
+            {
+                id: 'new_car_show_off',
+                src: 'gallery/new_car_show_off.jpeg',
+                name: 'New Car',
+                description: 'Showcasing the latest addition to the collection'
+            },
+            {
+                id: 'personal_trainer_tyre_roll',
+                src: 'gallery/personal_trainer_tyre_roll.jpeg',
+                name: 'Tire Training',
+                description: 'Intense workout with tire exercises'
+            },
+            {
+                id: 'lakeside_sitting_on_fence',
+                src: 'gallery/lakeside_sitting_on_fence.jpeg',
+                name: 'Lakeside Reflection',
+                description: 'Peaceful moments by the water'
+            },
+            {
+                id: 'sofa_pose_with_american_football',
+                src: 'gallery/sofa_pose_with_american_football.jpeg',
+                name: 'Football Fan',
+                description: 'Relaxing with the game on'
+            },
+            {
+                id: 'rams_american_football',
+                src: 'gallery/rams_american_football.jpeg',
+                name: 'Rams Football',
+                description: 'Supporting the team'
+            },
+            {
+                id: 'lakers_basketball',
+                src: 'gallery/lakers_basketball.jpeg',
+                name: 'Lakers Basketball',
+                description: 'Basketball action and excitement'
+            },
+            {
+                id: 'model_red_door',
+                src: 'gallery/model_red_door.jpeg',
+                name: 'Red Door',
+                description: 'Striking a pose by the iconic red door'
+            },
+            {
+                id: 'lounging_round_swimming_pool',
+                src: 'gallery/lounging_round_swimming_pool.jpeg',
+                name: 'Poolside Relaxation',
+                description: 'Unwinding by the swimming pool'
+            },
+            {
+                id: 'postworkout_sunset',
+                src: 'gallery/postworkout_sunset.jpeg',
+                name: 'Post-Workout Sunset',
+                description: 'Recovery time with a beautiful sunset view'
+            },
+            {
+                id: 'colombus_blue_jacket',
+                src: 'gallery/colombus_blue_jacket.webp',
+                name: 'Columbus Blue Jacket',
+                description: 'Exploring Columbus in style'
             }
         ];
 
