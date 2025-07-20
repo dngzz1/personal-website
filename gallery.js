@@ -109,11 +109,15 @@ class Gallery {
 
         // Navigation
         lightboxPrev.addEventListener('click', () => {
-            this.navigateLightbox(-1);
+            if (!lightboxPrev.disabled) {
+                this.navigateLightbox(-1);
+            }
         });
 
         lightboxNext.addEventListener('click', () => {
-            this.navigateLightbox(1);
+            if (!lightboxNext.disabled) {
+                this.navigateLightbox(1);
+            }
         });
     }
 
@@ -153,8 +157,12 @@ class Gallery {
         lightboxImage.alt = item.name;
 
         // Show/hide navigation buttons
-        lightboxPrev.style.display = index > 0 ? 'block' : 'none';
-        lightboxNext.style.display = index < this.galleryItems.length - 1 ? 'block' : 'none';
+        lightboxPrev.style.display = 'block';
+        lightboxNext.style.display = 'block';
+        
+        // Enable/disable navigation buttons
+        lightboxPrev.disabled = index <= 0;
+        lightboxNext.disabled = index >= this.galleryItems.length - 1;
 
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
