@@ -30,6 +30,9 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
+                    <div class="profile-photo">
+                        <img src="images/daniel_pink.jpeg" alt="Daniel Ng" onclick="openModal(this.src)">
+                    </div>
                     <h1>Curriculum Vitae</h1>
                     <p>My professional journey, skills, and experience in technology and mathematics.</p>
                 </div>
@@ -182,6 +185,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Enlarged profile picture">
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
