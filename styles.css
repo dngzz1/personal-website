@@ -42,6 +42,16 @@ nav {
     letter-spacing: 0.5px;
 }
 
+.logo a {
+    text-decoration: none;
+    color: #2c2c2c;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #8a8a8a;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
