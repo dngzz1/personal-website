@@ -18,18 +18,24 @@
 
     // Generate navigation HTML
     function generateNavigation() {
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const currentPath = window.location.pathname;
+        const currentPage = currentPath.split('/').pop() || 'index.html';
         const isHomePage = currentPage === 'index.html';
 
-        // Generate logo HTML
+        // Detect if we're in a subdirectory and need to adjust paths
+        const pathPrefix = currentPath.includes('/writings/') ? '../' : '';
+
+        // Generate logo HTML with correct path
+        const logoHref = pathPrefix + navData.logo.href;
         const logoHTML = isHomePage
             ? `<div class="logo">${navData.logo.text}</div>`
-            : `<div class="logo"><a href="${navData.logo.href}">${navData.logo.text}</a></div>`;
+            : `<div class="logo"><a href="${logoHref}">${navData.logo.text}</a></div>`;
 
-        // Generate navigation links
+        // Generate navigation links with correct paths
         const linksHTML = navData.links.map(link => {
+            const correctedHref = pathPrefix + link.href;
             const activeClass = link.href === currentPage ? ' class="active"' : '';
-            return `<li><a href="${link.href}"${activeClass}>${link.text}</a></li>`;
+            return `<li><a href="${correctedHref}"${activeClass}>${link.text}</a></li>`;
         }).join('');
 
         // Generate hamburger menu

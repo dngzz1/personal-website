@@ -23,12 +23,16 @@ header {
     background: #ffffff;
     border-bottom: 1px solid #e8e8e8;
     padding: 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
     display: flex;
     min-height: 68px;
     /* Fixed height to prevent layout shift during nav loading */
+}
+
+/* Only make the main navigation header sticky, not article headers */
+body>header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav {
