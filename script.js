@@ -1,37 +1,27 @@
 // Hamburger menu functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-    
-    hamburger.addEventListener('click', function() {
+
+    hamburger.addEventListener('click', function () {
         hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
     });
-    
+
     // Close menu when clicking on a link
     const links = document.querySelectorAll('.nav-links a');
     links.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             hamburger.classList.remove('active');
             navLinks.classList.remove('active');
         });
     });
-    
+
     // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         if (!hamburger.contains(event.target) && !navLinks.contains(event.target)) {
             hamburger.classList.remove('active');
             navLinks.classList.remove('active');
-        }
-    });
-
-    // Set active navigation state
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const allNavLinks = document.querySelectorAll('.nav-links a');
-    
-    allNavLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
         }
     });
 
@@ -45,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function closeModal() {
         modal.style.animation = 'fadeOut 0.3s ease';
         modalImg.style.animation = 'zoomOut 0.3s ease';
-        
+
         setTimeout(() => {
             modal.style.display = 'none';
             modal.style.animation = '';
@@ -56,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Handle image loading errors
     profilePhotos.forEach(photo => {
-        photo.addEventListener('error', function() {
+        photo.addEventListener('error', function () {
             this.style.display = 'none';
             this.parentElement.classList.add('no-image');
         });
@@ -64,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Open modal when profile photo is clicked
     profilePhotos.forEach(photo => {
-        photo.addEventListener('click', function() {
+        photo.addEventListener('click', function () {
             modal.style.display = 'block';
             modalImg.src = this.src;
             modalImg.alt = this.alt;
@@ -76,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     closeBtn.addEventListener('click', closeModal);
 
     // Close modal when clicking outside the image
-    modal.addEventListener('click', function(event) {
+    modal.addEventListener('click', function (event) {
         // Check if the click was on the modal background (not on the image or close button)
         if (event.target === modal || event.target.classList.contains('modal-content')) {
             closeModal();
@@ -84,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Close modal with Escape key
-    document.addEventListener('keydown', function(event) {
+    document.addEventListener('keydown', function (event) {
         if (event.key === 'Escape' && modal.style.display === 'block') {
             closeModal();
         }
