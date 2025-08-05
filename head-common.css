@@ -23,13 +23,11 @@ body {
 }
 
 /* Font Loading Performance */
-.hero h1,
-.content-section h2,
 .job-info h3,
 .education-item h3,
 .job-header h3,
 .education-header h3 {
-    font-family: 'Georgia', serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 400;
     font-display: swap;
-} 
+}

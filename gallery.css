@@ -13,6 +13,7 @@
     font-size: 1.8rem;
     font-weight: 300;
     letter-spacing: 0.5px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .gallery-grid {
@@ -213,19 +214,19 @@
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 1rem;
     }
-    
+
     .gallery-item-info {
         padding: 1rem;
     }
-    
+
     .gallery-item-info h3 {
         font-size: 1rem;
     }
-    
+
     .gallery-item-info p {
         font-size: 0.8rem;
     }
-    
+
     .lightbox-nav {
         position: fixed;
         top: 50%;
@@ -245,25 +246,25 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     .lightbox-nav:hover:not(:disabled) {
         background: rgba(0, 0, 0, 0.8);
         transform: translateY(-50%) scale(1.1);
     }
-    
+
     .lightbox-nav:disabled {
         opacity: 0.3;
         cursor: not-allowed;
     }
-    
+
     .lightbox-prev {
         left: 10px;
     }
-    
+
     .lightbox-next {
         right: 10px;
     }
-    
+
     .lightbox-close {
         top: 10px;
         right: 10px;
@@ -271,7 +272,7 @@
         height: 40px;
         font-size: 1.5rem;
     }
-    
+
     .lightbox-content {
         max-width: 95vw;
         max-height: 95vh;
@@ -282,34 +283,34 @@
     .gallery-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .gallery-item-info {
         padding: 0.75rem;
     }
-    
+
     .gallery-item-info h3 {
         font-size: 0.9rem;
         margin-bottom: 0.25rem;
     }
-    
+
     .gallery-item-info p {
         font-size: 0.75rem;
     }
-    
+
     .lightbox-nav {
         min-width: 35px;
         height: 35px;
         padding: 0.5rem 0.25rem;
     }
-    
+
     .lightbox-prev {
         left: 5px;
     }
-    
+
     .lightbox-next {
         right: 5px;
     }
-    
+
     .lightbox-close {
         top: 5px;
         right: 5px;
@@ -329,8 +330,9 @@
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
-} 
+}
